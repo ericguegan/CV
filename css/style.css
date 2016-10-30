@@ -1,0 +1,182 @@
+/* ================= Configuration Responsive ================= */
+@viewport {
+   width: device-width; /* largeur du viewport */
+   zoom: 1; /* zoom initial à 1.0 (et clin d'oeil aux fans d'IE6/7) */
+}
+@media screen and (max-width: 680px){
+	body{
+		background-color: orange;
+		font-size: 12px;
+	}
+}
+@media screen and (min-width: 681px) and (max-width: 1024px){
+	body{
+		background-color: yellow;
+	}
+}
+/* Je pose ma police de caractère sur toute ma page: */
+html {
+	font-family: Comic;
+}
+/* Je fixe la marge du body */
+body{
+margin:0px;
+}
+/* Je pose la taille et la couleur de l'entête */
+header{
+height:30px;
+background:#025986;
+color: #ffffff;
+}
+/* Je règle la couleur de mes liens sur ma page */
+a: {
+color:#ffffff;
+}
+a:visited
+{
+color: #ffffff;
+}
+a:hover
+{
+	color: yellow;
+}
+a:active {
+	color:#ffffff;
+}
+
+
+/* Je règle ici mes blocs "adresse" et "photo" - ceci pour remplacer le tableau que j'avais fait précédemment -
+* "global_add" doit contenir adresse et "photo" */
+.global_add {
+   width:100%;
+
+   background-image: url();
+	 margin-left: 10px;
+	 margin-top: 15px;
+}
+.adresse {
+	float:left;
+  width:auto;
+	line-height : 0.5;
+	}
+.photo {
+	float: right;
+	margin-left:auto;
+}
+.gras {
+	font-weight:bold;
+	color:green;
+	font-style : italic;
+}
+/* L'idée est juste d'arrondir un peu les bords de ma photo" */
+#pic {
+	border-radius: 90px;
+}
+/* permettre à la photo de tourner au passage de la souris */
+#pic {
+  -webkit-transition:-webkit-transform .9s; // Chrome Safari
+  -moz-transition:-moz-transform .9s;       // Mozilla
+  -o-transition:-o-transform .9s;           // Opéra
+  -ms-transition:-ms-transform .9s;         // IE
+  transition:transform .9s;
+}
+
+#pic:hover{
+  -webkit-transform:rotate(380deg);
+  -moz-transform:rotate(380deg);
+  -o-transform:rotate(380deg);
+  -ms-transform:rotate(380deg);
+  transform:rotate(380deg);
+}
+
+#show
+{
+	margin-left: 100px;
+	font-style : italic;
+	color: #de6115;
+}
+/* Je fixe la couleur de la partie "Domaines d'interventions" */
+.espace {
+	white-space: pre-line;
+}
+.section1{
+		color:#30902e;
+		text-align:justify;
+		margin-left: 20%;
+		margin-right: 20%;
+    border: 1px solid #e2f4e0;
+
+}
+.interv {
+		color:#30902e;
+}
+
+/* Réglage du Tître principal - ajout d'un background */
+.titre {
+	margin-top: 250px;
+	text-align: center;
+	color: #30902e;
+	background-image: url(../img/fond.jpg);
+	background-size: cover;
+	border: 1px solid white;
+	border-radius: 20px;
+}
+/* Je positionne le logo Web2créa en face de la phrase précédente */
+.w2crea {
+	margin-bottom: -21px;
+}
+
+
+/* Emplacement des descriptions des différents postes - réglage de la marge */
+.section_global {
+  display :inline-block;
+	width:100%;
+	text-align:justify;
+  margin-left: 30px;
+
+}
+.section_gauche {
+  float:left;
+	font-weight:bold;
+	margin-left: 10px;
+	width: 20%;
+}
+.section_droite {
+  float:left;
+	margin-right: 60px;
+  width: 80%
+}
+/* Cette classe permet de mettre en italique et en bleu les régies */
+.italique {
+	font-style : italic;
+	color: blue;
+}
+
+/* Je fixe la couleur de la partie "Formations et diplômes" */
+.formation {
+	color:#30902e;
+
+}
+
+/* Réglage de l'interligne de la partie "Activités extra professionnelles" */
+.activite {
+	line-height : 1.0;
+
+}
+
+/* réglage de la position de la flèche permettant de remonter la page */
+.b3 {
+/*float:right; */
+position: absolute;
+right: 5px;
+}
+
+/* réglage du pied de page hauteur et couleur */
+#footer{
+height:570px;
+background:#025986;
+background-image: url(../img/graphic.jpg);
+background-size: cover;
+}
+
+/* Fin du css - On retourne voir ce qui se passe dans la prairie... */
